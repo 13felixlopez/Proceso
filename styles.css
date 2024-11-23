@@ -1,0 +1,118 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #f6f9fc, #dceffe);
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background: #fff;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #6c91c2, #85a4d6);
+    color: #fff;
+    padding: 20px;
+}
+
+header .logo img {
+    max-width: 100px;
+}
+
+header .info {
+    margin-left: 20px;
+}
+
+header h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Steps */
+.process {
+    padding: 20px;
+}
+
+.step {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.step h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    color: #3366cc;
+}
+
+.step ul {
+    list-style: none;
+    padding: 0;
+}
+
+.step ul li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.step ul li:hover {
+    transform: translateX(10px);
+}
+
+.step ul li .icon {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    font-size: 1.2rem;
+    color: #3366cc;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .info {
+        margin-left: 0;
+    }
+
+    .container {
+        margin: 10px;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proceso de Secado</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="Logo.png" alt="Logo">
+            </div>
+            <div class="info">
+                <h2>Información sobre el Proceso</h2>
+            </div>
+        </header>
+        <section class="process">
+            <div class="step">
+                <h3>Recepción</h3>
+                <H4>No Asignado</H4>
+                <p>Esto es cuando el lote ya se recibio en la Recepción y se asigno a una area (Secado Natural, Secado Mecanico), pero dicha area no ha iniciado un proceso.</p>
+            </div>
+            <div class="step">
+                <h3>Secado Natural</h3>
+                <ul class="left-list">
+                    <li><span class="icon">☀️</span><strong>Tendido:</strong> El lote se asignó a secado natural y ya ingresaron los datos del patio y ubicación.</li>
+                    <li><span class="icon">📦</span><strong>Enfarde:</strong> Es cuando el lote ha terminado su proceso de secado y se procede a llenar en sacos para ser
+                        enviado hacia almacén, pero para que este envio se realice primero se debe realizar el sacado de muestra
+                        y esperar el resultado de la misma por parte de catacion.</li>
+                    <li><span class="icon">🔬</span><strong>Analizado:</strong> Se extrae una muestra para evaluar si es apto para almacén.</li>
+                    <li><span class="icon">🚛</span><strong>Envio:</strong> Lote analizado y listo para su envío a almacén.</li>
+                    <li><span class="icon">⛔</span><strong>Tendido/Rechazado:</strong> Si no pasa el análisis, se re-procesa el café.</li>
+                    <li><span class="icon">🏠</span><strong>Almacén:</strong> El lote cumple con todos los procesos y se almacena.</li>
+                </ul>
+            </div>
+            <div class="step">
+                <h3>Secado Mecánico</h3>
+                <ul class="left-list">
+                    <li><span class="icon">⚙️</span><strong>POAV:</strong> Es el proceso en el cual se almacena el lote de café en una tolva con capacidad para 600 QQs, en este 
+                        primer paso el café solo esta en espera de iniciar su proceso de secado.</li>
+                    <li><span class="icon">⬇️</span><strong>Vertical:</strong> Es el proceso en el cual el lote de café se inicia a pre-secar, en un periodo comprendido de mas o menos
+                        12 horas el lote estaria en un porcentaje de humedad de entre 30% y 20%.</li>
+                    <li><span class="icon">⏳</span><strong>POA:</strong> Es el proceso en el cual el lote de café se encuentra en espera de ser ingresado a guardiola para continuar 
+                        su proceso de secado, esta maquina tiene una capacidad de 300 QQs.</li>
+                    <li><span class="icon">🔥</span><strong>Guardiola:</strong> Es el proceso en el cual el lote de café inicia su proceso de secado en el cual su objetivo es dejar 
+                        el porcentaje de humedad en un rango de entre 12.8% y 11.8% en un periodo de 15 horas aproximadamente.</li>
+                    <li><span class="icon">📊</span><strong>PS:</strong> Es el proceso en el cual el lote de café se encuentra en espera de resultados de catación para luego
+                        ser enviado a almacén.</li>
+                    <li><span class="icon">🏠</span><strong>Almacén:</strong> Es el fin del ciclo, ya que el lote de café ha pasado los dias correspondientes en patio,
+                        se le realizo el analisis por parte de catacion y se determnino que estaba listo para almacenar.
+                        En este paso el area de almacén ya ha iniciado el proceso de recepción del lote y ya se encuentra 
+                        los datos ingresados en el sistema.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
